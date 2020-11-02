@@ -1,3 +1,0 @@
-chmod a+x init.sh
-sudo find /home/box/web -type d -exec chmod 755 {} \; -print
-sudo find /home/box/web -type f -exec chmod 644 {} \; -print
