@@ -4,4 +4,4 @@ def app(environ, start_response):
   start_response(status, headers )
   data = environ.get('QUERY_STRING')
   body = [bytes(i+'\n','ascii') for i in data.split('&')]
-  return [ body ]
+  return body
