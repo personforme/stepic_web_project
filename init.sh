@@ -8,4 +8,4 @@ sudo ln -sf /home/box/web/hello.py /etc/gunicorn.d/hello.py
 #sudo gunicorn -b 0.0.0.0:8080 -c hello.py hello &
 #gunicorn -bind='0.0.0.0:8080' -c hello.py hello:app
 #gunicorn -b 0.0.0.0:8080 hello:application
-gunicorn -b 0.0.0.0:8080 hello
+gunicorn -b 0.0.0.0:8080 hello &
