@@ -9,3 +9,5 @@ sudo ln -sf /home/box/web/hello.py /etc/gunicorn.d/hello.py
 #gunicorn -bind='0.0.0.0:8080' -c hello.py hello:app
 #gunicorn -b 0.0.0.0:8080 hello:application
 gunicorn -b 0.0.0.0:8080 hello &
+cd /home/box/web/ask
+gunicorn --bind=0.0.0.0:8000 --workers=2 --timeout=15 --log-level=debug ask.wsgi:application
