@@ -20,4 +20,4 @@ sudo ln -sf /home/box/web/hello.py /etc/gunicorn.d/hello.py
 
 sudo ln -sf /home/box/web/etc/gunicorn.conf  /etc/gunicorn.d/test
 #sudo gunicorn -c /home/box/web/etc/gunicorn-django.conf ask.wsgi:application
-gunicorn -w 2 -c /home/box/web/etc/hello.py hello:app & gunicorn -w 2 -c /home/box/web/etc/qa.py ask.wsgi:application
+gunicorn -w 2 -c /home/box/web/etc/hello.py hello:application & gunicorn -w 2 -c /home/box/web/etc/qa.py ask.wsgi:application
